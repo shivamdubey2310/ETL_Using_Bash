@@ -6,3 +6,5 @@ ETL using bash, extracting from randomuser.me/api/
 - Loaded in postgresql using sqlalchemy
 - Scheduled using cronjob.
 
+## Instructions
+- don't use venv

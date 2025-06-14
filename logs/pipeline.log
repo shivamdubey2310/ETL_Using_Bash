@@ -1,0 +1,161 @@
+-------------------------------------------------------------------
+2025-06-14 23:01:57 - INFO - Starting Pipeline
+2025-06-14 23:01:57 - INFO - Starting extraction
+2025-06-14 23:01:57 - INFO - Completed extraction
+2025-06-14 23:01:57 - INFO - Starting Transformation
+2025-06-14 23:02:00 - INFO - Inside the transform function
+2025-06-14 23:02:00 - INFO - Completed separating Data
+2025-06-14 23:02:00 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:01:57 - INFO - Completed Transformation
+2025-06-14 23:01:57 - INFO - Starting CreateTable
+2025-06-14 23:01:57 - INFO - Completed CreateTable
+2025-06-14 23:01:57 - INFO - Starting Loading
+2025-06-14 23:02:01 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/picture_raw.csv' into table 'picture'...
+2025-06-14 23:02:01 - ERROR - Failed to import into picture.
+2025-06-14 23:02:01 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/registered_raw.csv' into table 'registered'...
+2025-06-14 23:02:01 - ERROR - Failed to import into registered.
+2025-06-14 23:02:01 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/dob_raw.csv' into table 'dob'...
+2025-06-14 23:02:01 - ERROR - Failed to import into dob.
+2025-06-14 23:02:01 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/login_raw.csv' into table 'login'...
+2025-06-14 23:02:01 - ERROR - Failed to import into login.
+2025-06-14 23:02:01 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/name_raw.csv' into table 'name'...
+2025-06-14 23:02:01 - ERROR - Failed to import into name.
+2025-06-14 23:02:01 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/location_raw.csv' into table 'location'...
+2025-06-14 23:02:01 - ERROR - Failed to import into location.
+2025-06-14 23:01:57 - INFO - Completed Loading
+2025-06-14 23:01:57 - INFO - Pipeline run successfully
+--------------------------------------------------------------------------------------------------------------------------------------
+2025-06-14 23:05:34 - INFO - Starting Pipeline
+2025-06-14 23:05:34 - INFO - Starting extraction
+2025-06-14 23:05:34 - INFO - Completed extraction
+2025-06-14 23:05:34 - INFO - Starting Transformation
+2025-06-14 23:05:37 - INFO - Inside the transform function
+2025-06-14 23:05:37 - INFO - Completed separating Data
+2025-06-14 23:05:37 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:05:34 - INFO - Completed Transformation
+2025-06-14 23:05:34 - INFO - Starting CreateTable
+2025-06-14 23:05:34 - INFO - Completed CreateTable
+2025-06-14 23:05:34 - INFO - Starting Loading
+2025-06-14 23:05:38 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/picture_raw.csv' into table 'picture'...
+2025-06-14 23:05:38 - ERROR - Failed to import into picture.
+2025-06-14 23:05:38 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/registered_raw.csv' into table 'registered'...
+2025-06-14 23:05:38 - ERROR - Failed to import into registered.
+2025-06-14 23:05:38 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/dob_raw.csv' into table 'dob'...
+2025-06-14 23:05:38 - ERROR - Failed to import into dob.
+2025-06-14 23:05:38 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/login_raw.csv' into table 'login'...
+2025-06-14 23:05:38 - ERROR - Failed to import into login.
+2025-06-14 23:05:38 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/name_raw.csv' into table 'name'...
+2025-06-14 23:05:38 - ERROR - Failed to import into name.
+2025-06-14 23:05:38 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/location_raw.csv' into table 'location'...
+2025-06-14 23:05:38 - ERROR - Failed to import into location.
+2025-06-14 23:05:34 - INFO - Completed Loading
+2025-06-14 23:05:34 - INFO - Pipeline run finished
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+2025-06-14 23:10:09 - INFO - Starting Pipeline
+2025-06-14 23:10:09 - INFO - Starting extraction
+2025-06-14 23:10:09 - INFO - Completed extraction
+2025-06-14 23:10:09 - INFO - Starting Transformation
+2025-06-14 23:10:12 - INFO - Inside the transform function
+2025-06-14 23:10:12 - INFO - Completed separating Data
+2025-06-14 23:10:12 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:10:09 - INFO - Completed Transformation
+2025-06-14 23:10:09 - INFO - Starting CreateTable
+2025-06-14 23:10:09 - INFO - Completed CreateTable
+2025-06-14 23:10:09 - INFO - Starting Loading
+2025-06-14 23:10:12 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/picture_raw.csv' into table 'picture'...
+2025-06-14 23:10:12 - ERROR - Failed to import into picture.
+2025-06-14 23:10:12 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/registered_raw.csv' into table 'registered'...
+2025-06-14 23:10:12 - ERROR - Failed to import into registered.
+2025-06-14 23:10:12 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/dob_raw.csv' into table 'dob'...
+2025-06-14 23:10:12 - ERROR - Failed to import into dob.
+2025-06-14 23:10:12 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/login_raw.csv' into table 'login'...
+2025-06-14 23:10:12 - ERROR - Failed to import into login.
+2025-06-14 23:10:12 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/name_raw.csv' into table 'name'...
+2025-06-14 23:10:12 - ERROR - Failed to import into name.
+2025-06-14 23:10:12 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/location_raw.csv' into table 'location'...
+2025-06-14 23:10:12 - ERROR - Failed to import into location.
+2025-06-14 23:10:09 - INFO - Completed Loading
+2025-06-14 23:10:09 - INFO - Pipeline run finished
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+2025-06-14 23:10:31 - INFO - Starting Pipeline
+2025-06-14 23:10:31 - INFO - Starting extraction
+2025-06-14 23:10:31 - INFO - Completed extraction
+2025-06-14 23:10:31 - INFO - Starting Transformation
+2025-06-14 23:10:33 - INFO - Inside the transform function
+2025-06-14 23:10:33 - INFO - Completed separating Data
+2025-06-14 23:10:33 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:10:31 - INFO - Completed Transformation
+2025-06-14 23:10:31 - INFO - Starting CreateTable
+2025-06-14 23:10:31 - INFO - Completed CreateTable
+2025-06-14 23:10:31 - INFO - Starting Loading
+2025-06-14 23:10:34 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/picture_raw.csv' into table 'picture'...
+2025-06-14 23:10:34 - INFO - Successfully imported picture.
+2025-06-14 23:10:34 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/registered_raw.csv' into table 'registered'...
+2025-06-14 23:10:34 - INFO - Successfully imported registered.
+2025-06-14 23:10:34 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/dob_raw.csv' into table 'dob'...
+2025-06-14 23:10:34 - INFO - Successfully imported dob.
+2025-06-14 23:10:34 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/login_raw.csv' into table 'login'...
+2025-06-14 23:10:34 - INFO - Successfully imported login.
+2025-06-14 23:10:34 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/name_raw.csv' into table 'name'...
+2025-06-14 23:10:34 - INFO - Successfully imported name.
+2025-06-14 23:10:34 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/location_raw.csv' into table 'location'...
+2025-06-14 23:10:34 - INFO - Successfully imported location.
+2025-06-14 23:10:31 - INFO - Completed Loading
+2025-06-14 23:10:31 - INFO - Pipeline run finished
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+2025-06-14 23:11:16 - INFO - Starting Pipeline
+2025-06-14 23:11:16 - INFO - Starting extraction
+2025-06-14 23:11:16 - INFO - Completed extraction
+2025-06-14 23:11:16 - INFO - Starting Transformation
+2025-06-14 23:11:18 - INFO - Inside the transform function
+2025-06-14 23:11:18 - INFO - Completed separating Data
+2025-06-14 23:11:18 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:11:16 - INFO - Completed Transformation
+2025-06-14 23:11:16 - INFO - Starting CreateTable
+-------------------------------------------------------------------
+2025-06-14 23:13:02 - INFO - Starting Pipeline
+2025-06-14 23:13:02 - INFO - Starting extraction
+2025-06-14 23:13:02 - INFO - Completed extraction
+2025-06-14 23:13:02 - INFO - Starting Transformation
+2025-06-14 23:13:04 - INFO - Inside the transform function
+2025-06-14 23:13:04 - INFO - Completed separating Data
+2025-06-14 23:13:04 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:13:02 - INFO - Completed Transformation
+2025-06-14 23:13:02 - INFO - Starting CreateTable
+2025-06-14 23:13:02 - INFO - Completed CreateTable
+2025-06-14 23:13:02 - INFO - Starting Loading
+2025-06-14 23:13:05 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/picture_raw.csv' into table 'picture'...
+2025-06-14 23:13:05 - ERROR - Failed to import into picture.
+2025-06-14 23:13:05 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/registered_raw.csv' into table 'registered'...
+2025-06-14 23:13:05 - ERROR - Failed to import into registered.
+2025-06-14 23:13:05 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/dob_raw.csv' into table 'dob'...
+-------------------------------------------------------------------
+2025-06-14 23:13:30 - INFO - Starting Pipeline
+2025-06-14 23:13:30 - INFO - Starting extraction
+2025-06-14 23:13:30 - INFO - Completed extraction
+2025-06-14 23:13:30 - INFO - Starting Transformation
+2025-06-14 23:13:32 - INFO - Inside the transform function
+2025-06-14 23:13:32 - INFO - Completed separating Data
+2025-06-14 23:13:32 - INFO - Completed duplicate removal and serial generation Data
+2025-06-14 23:13:30 - INFO - Completed Transformation
+2025-06-14 23:13:30 - INFO - Starting CreateTable
+2025-06-14 23:13:30 - INFO - Completed CreateTable
+2025-06-14 23:13:30 - INFO - Starting Loading
+2025-06-14 23:13:33 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/picture_raw.csv' into table 'picture'...
+2025-06-14 23:13:33 - INFO - Successfully imported picture.
+2025-06-14 23:13:33 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/registered_raw.csv' into table 'registered'...
+2025-06-14 23:13:33 - INFO - Successfully imported registered.
+2025-06-14 23:13:33 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/dob_raw.csv' into table 'dob'...
+2025-06-14 23:13:33 - INFO - Successfully imported dob.
+2025-06-14 23:13:33 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/login_raw.csv' into table 'login'...
+2025-06-14 23:13:33 - INFO - Successfully imported login.
+2025-06-14 23:13:33 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/name_raw.csv' into table 'name'...
+2025-06-14 23:13:33 - INFO - Successfully imported name.
+2025-06-14 23:13:33 - INFO - Importing '/mnt/mydrive/ETL_Using_Bash/data/location_raw.csv' into table 'location'...
+2025-06-14 23:13:33 - INFO - Successfully imported location.
+2025-06-14 23:13:30 - INFO - Completed Loading
+2025-06-14 23:13:30 - INFO - Pipeline run finished
+-------------------------------------------------------------------

@@ -33,5 +33,5 @@ echo "$NOW - INFO - Completed Loading" >> logs/pipeline.log
 
 
 # End of the pipeline
-echo "$NOW - INFO - Pipeline run successfully" >> logs/pipeline.log
+echo "$NOW - INFO - Pipeline run finished" >> logs/pipeline.log
 echo "-------------------------------------------------------------------" >> logs/pipeline.log
