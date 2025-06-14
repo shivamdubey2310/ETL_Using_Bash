@@ -1,0 +1,119 @@
+1. Raw Data Schema
+
+0 : gender
+1 : name.title
+2 : name.first
+3 : name.last
+4 : location.street.number
+5 : location.street.name
+6 : location.city
+7 : location.state
+8 : location.country
+9 : location.postcode
+10 : location.coordinates.latitude
+11 : location.coordinates.longitude
+12 : location.timezone.offset
+13 : location.timezone.description
+14 : email
+15 : login.uuid
+16 : login.username
+17 : login.password
+18 : login.salt
+19 : login.md5
+20 : login.sha1
+21 : login.sha256
+22 : dob.date
+23 : dob.age
+24 : registered.date
+25 : registered.age
+26 : phone
+27 : cell
+28 : id.name
+29 : id.value
+30 : picture.large
+31 : picture.medium
+32 : picture.thumbnail
+33 : nat
+
+---------------------------------------------------
+
+table names - person, name, location, login, dob, registered, picture
+
+-----------------------------------------------------
+
+2. person Table Schema
+
+- id_name
+- id_value
+- nameID
+- gender
+- locationID
+- email
+- loginID
+- dobID
+- registeredID
+- phone
+- cell
+- pictureID
+- nationality
+
+-----------------------------------------------------
+
+3. name Table Schema
+
+- nameID
+- name_title
+- first_name
+- last_name
+
+-------------------------------------------------------
+
+4. location Table Schema
+
+- locationID
+- street_number 
+- street_name 
+- city
+- state 
+- country 
+- postcode
+- coordinates_latitude 
+- coordinates_longitude
+- timezone_offset 
+- timezone_description
+
+-----------------------------------------------------------
+
+5. login Table Schema 
+
+- uuid 
+- username
+- password 
+- salt
+- md5 
+- sha1 
+- sha256
+
+----------------------------------------------------------------
+
+6. dob Table Schema
+
+- date
+- age
+
+-----------------------------------------------------------------
+
+7. registered Table Schema
+
+- date
+- age
+
+----------------------------------------------------------------
+
+8. picture Table Schema 
+
+- large 
+- medium 
+- thumbnail
+
+-------------------------------------------------------------
