@@ -32,31 +32,31 @@ def create_tables():
             """
             CREATE TABLE IF NOT EXISTS name (
                 nameID SERIAL PRIMARY KEY,
-                name_title VARCHAR(10),
-                first_name VARCHAR(30),
-                last_name VARCHAR(30)
+                name_title VARCHAR(30),
+                first_name VARCHAR(50),
+                last_name VARCHAR(50)
             );
             """,
             """
             CREATE TABLE IF NOT EXISTS location (
                 locationID SERIAL PRIMARY KEY,
                 street_number INTEGER,
-                street_name VARCHAR(30),
-                city VARCHAR(30),
-                state VARCHAR(30),
-                country VARCHAR(30),
-                postcode VARCHAR(20),
+                street_name VARCHAR(100),
+                city VARCHAR(100),
+                state VARCHAR(100),
+                country VARCHAR(100),
+                postcode VARCHAR(30),
                 coordinates_latitude REAL, 
                 coordinates_longitude REAL,
                 timezone_offset VARCHAR(10),
-                timezone_description VARCHAR(50)
+                timezone_description VARCHAR(100)
             );
             """,
             """
             CREATE TABLE IF NOT EXISTS login (
                 uuid VARCHAR(50) PRIMARY KEY, 
-                username VARCHAR(30),
-                password VARCHAR(30),
+                username VARCHAR(50),
+                password VARCHAR(50),
                 salt VARCHAR(10),
                 md5 VARCHAR(100),
                 sha1 VARCHAR(100),

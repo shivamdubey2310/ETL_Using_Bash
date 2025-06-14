@@ -179,10 +179,10 @@ def transform():
     
     table_names = ['person', 'name', 'location', 'login', 'dob', 'registered', 'picture']
     
-    # separatingData()
+    separatingData()
     logging.info("Completed separating Data")
     
-    # removingDuplicatesAndGeneratingSerials(table_names)
+    removingDuplicatesAndGeneratingSerials(table_names)
     logging.info("Completed duplicate removal and serial generation Data")
     
 transform()

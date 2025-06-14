@@ -23,7 +23,7 @@ db_user="$db_user"
 db_host="$db_host"
 db_passwd="$db_passwd"
 
-export db_passwd  # Export so psql can access it
+export PGPASSWORD="$db_passwd" # so child process psql can use it
 
 # Loop through each CSV and load into corresponding table
 for file_base in "${!table_map[@]}"; do
@@ -41,4 +41,4 @@ for file_base in "${!table_map[@]}"; do
 done
 
 # # Clean up password from environment
-# unset PGPASSWORD
+unset PGPASSWORD
