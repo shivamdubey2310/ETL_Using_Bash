@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -X GET "https://randomuser.me/api/?format=json&results=20" -o data/raw_data.json
+curl -X GET "https://randomuser.me/api/?format=csv&results=20" -o data/raw_data.csv

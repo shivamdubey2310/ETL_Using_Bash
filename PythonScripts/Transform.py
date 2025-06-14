@@ -1,6 +1,5 @@
 import pandas as pd
 import logging
-import json
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -185,5 +184,5 @@ def transform():
     
     # removingDuplicatesAndGeneratingSerials(table_names)
     logging.info("Completed duplicate removal and serial generation Data")
-
+    
 transform()

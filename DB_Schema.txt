@@ -1,79 +1,159 @@
 2. person Table Schema
 
-- id_name - str - primary_key_composite
-- id_value - str - primary_key_composite
-- nameID - int - 
-- gender
-- locationID
-- email
-- loginID
-- dobID
-- registeredID
-- phone
-- cell
-- pictureID
-- nationality
+- ID - int(5) - primary_key
+- nameID - int(5) - Foreign key For nameID in name Table
+- gender - str(7)  
+- locationID - int(5)
+- email - str(30)
+- uuid - int(5) - Foreign key For uuid in login Table
+- dobID - int(5) - Foreign key For dobID in dob Table
+- registeredID - int(5) - Foreign key For registeredID in registered Table
+- phone - str(20)
+- cell - str(20)
+- pictureID - int(5) - Foreign key For pictureID in picture Table
+- nationality - str(2)
 
 -----------------------------------------------------
 
 3. name Table Schema
 
-- nameID
-- name_title
-- first_name
-- last_name
+- nameID - int(5) - primary_key
+- name_title - str(5)
+- first_name - str(30)
+- last_name - str(30)
 
 -------------------------------------------------------
 
 4. location Table Schema
 
-- locationID
-- street_number 
-- street_name 
-- city
-- state 
-- country 
-- postcode
-- coordinates_latitude 
-- coordinates_longitude
-- timezone_offset 
-- timezone_description
+- locationID - int(5) - primary_key
+- street_number - int(6)
+- street_name - str(30)
+- city - str(30)
+- state - str(30)
+- country - str(30)
+- postcode - str(20)
+- coordinates_latitude - float(10, 5)
+- coordinates_longitude - float(10, 5)
+- timezone_offset  - str(6)
+- timezone_description - str(50)
 
 -----------------------------------------------------------
 
 5. login Table Schema 
 
-- uuid 
-- username
-- password 
-- salt
-- md5 
-- sha1 
-- sha256
+- uuid - str(50) - primary_key
+- username - str(30)
+- password - str(30)
+- salt - str(10)
+- md5 - str(100)
+- sha1 - str(100)
+- sha256 - str(100)
 
 ----------------------------------------------------------------
 
 6. dob Table Schema
 
-- dobID
-- date
-- age
+- dobID - int(5) - primary_key
+- date - DateTime - Ex. "1949-09-04T23:53:38.239Z"
+- age - int(3)
 
 -----------------------------------------------------------------
 
 7. registered Table Schema
 
-- registeredID
-- date
-- age
+- registeredID - int(5) - primary_key
+- date - DateTime - Ex. "1949-09-04T23:53:38.239Z"
+- age - int(100)
 
 ----------------------------------------------------------------
 
 8. picture Table Schema 
 
-- pictureID
-- large 
-- medium 
-- thumbnail
+- pictureID - int(5) - primary_key
+- large - str(55)
+- medium - str(55)
+- thumbnail - str(55)
 
 -------------------------------------------------------------
+[
+    """
+    -- name Table Schema
+    CREATE TABLE IF NOT EXISTS name (
+        nameID SERIAL PRIMARY KEY,
+        name_title VARCHAR(5),
+        first_name VARCHAR(30),
+        last_name VARCHAR(30)
+    );
+    """,
+    """
+    -- location Table Schema
+    CREATE TABLE IF NOT EXISTS location (
+        locationID SERIAL PRIMARY KEY,
+        street_number INTEGER,
+        street_name VARCHAR(30),
+        city VARCHAR(30),
+        state VARCHAR(30),
+        country VARCHAR(30),
+        postcode VARCHAR(20),
+        coordinates_latitude REAL, 
+        coordinates_longitude REAL,
+        timezone_offset VARCHAR(10),
+        timezone_description VARCHAR(50)
+    );
+    """,
+    """
+    -- login Table Schema
+    CREATE TABLE IF NOT EXISTS login (
+        uuid VARCHAR(50) PRIMARY KEY, 
+        username VARCHAR(30),
+        password VARCHAR(30),
+        salt VARCHAR(10),
+        md5 VARCHAR(100),
+        sha1 VARCHAR(100),
+        sha256 VARCHAR(100)
+    );
+    """,
+    """
+    -- dob Table Schema
+    CREATE TABLE IF NOT EXISTS dob (
+        dobID SERIAL PRIMARY KEY,
+        date TIMESTAMP WITH TIME ZONE,
+        age INTEGER
+    );
+    """,
+    """
+    -- registered Table Schema
+    CREATE TABLE IF NOT EXISTS registered (
+        registeredID SERIAL PRIMARY KEY,
+        date TIMESTAMP WITH TIME ZONE,
+        age INTEGER 
+    );
+    """,
+    """
+    -- picture Table Schema
+    CREATE TABLE IF NOT EXISTS picture (
+        pictureID SERIAL PRIMARY KEY,
+        large VARCHAR(255), 
+        medium VARCHAR(255),
+        thumbnail VARCHAR(255)
+    );
+    """,
+    """
+    -- person Table Schema (Depends on other tables)
+    CREATE TABLE IF NOT EXISTS person (
+        ID SERIAL PRIMARY KEY,
+        nameID INTEGER REFERENCES name(nameID),
+        gender VARCHAR(7),
+        locationID INTEGER REFERENCES location(locationID),
+        email VARCHAR(50), -- Increased from 30 for typical email length
+        uuid VARCHAR(50) REFERENCES login(uuid), 
+        dobID INTEGER REFERENCES dob(dobID),
+        registeredID INTEGER REFERENCES registered(registeredID),
+        phone VARCHAR(20),
+        cell VARCHAR(20),
+        pictureID INTEGER REFERENCES picture(pictureID),
+        nationality VARCHAR(2)
+    );
+    """ 
+]
