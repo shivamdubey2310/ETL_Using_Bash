@@ -20,7 +20,18 @@ logging.basicConfig(
 # ------------------------------------------------------------------------------------------------------------------
  
 def separatingData2(df, table_name, mapDict):
+    """
+        helper function for separating Data from raw_data.csv
     
+    params:
+    ------
+        
+        df : raw_data.csv dataframe
+        table_name : name of the table 
+        mapDict : col names and indices to fetch them
+
+    """
+
     dictForDf = {}
 
     for col_name, col_index in mapDict.items():
@@ -43,7 +54,7 @@ def separatingData2(df, table_name, mapDict):
 
 def separatingData():
     """
-        Separating raw data in different files.
+        Separating raw data in different files. 
     """
 
     logging.info("Inside the separatingData function")
@@ -107,16 +118,19 @@ def separatingData():
         },
 
         "dob": {
+            "dobID": None,
             "date": 22,
             "age": 23
         },
 
         "registered": {
+            "registeredID": None,
             "date": 24,
             "age": 25
         },
 
         "picture": {
+            "pictureID": None,
             "large": 30,
             "medium": 31,
             "thumbnail": 32
@@ -129,10 +143,49 @@ def separatingData():
     # separatingData2(df, list(table_col_map.keys())[0], table_col_map.get("dob"))
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------------------------
+
+
+def removingDuplicatesAndGeneratingSerials(table_names):
+    """
+        a function to remove duplicates and generate serials for columns with all NaN values,
+        or for columns ending with 'ID' that contain any NaN values.
+    """
+
+    for table in table_names:
+        file_name = f"data/{table}_raw.csv"
+        try:
+            # Reading the file in read mode
+            with open(file_name, "r") as fileReader:
+                df = pd.read_csv(fileReader)
+                df.drop_duplicates(inplace=True)  # Removing duplicates
+
+                for col in df.columns:
+                    # Generate serials if all values are NaN, or if column name ends with 'ID' and there are any NaN values
+                    if df[col].isna().all() or (col.lower().endswith('id') and df[col].isna().any()):
+                        df[col] = list(range(1, len(df[col]) + 1))
+
+            # Writing the cleaned DataFrame back to the file
+            with open(file_name, "w") as fileWriter:
+                df.to_csv(fileWriter, index=False)
+
+        except Exception as e:
+            logging.error(f"Error in opening file {file_name}: {e}")
+        
+    
+
+# ---------------------------------------------------------------------------------------------
+
 
 def transform():
     logging.info("Inside the transform function")
-    separatingData()
     
+    table_names = ['person', 'name', 'location', 'login', 'dob', 'registered', 'picture']
+    
+    # separatingData()
+    logging.info("Completed separating Data")
+    
+    # removingDuplicatesAndGeneratingSerials(table_names)
+    logging.info("Completed duplicate removal and serial generation Data")
 
 transform()

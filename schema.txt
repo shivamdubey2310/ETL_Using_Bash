@@ -98,6 +98,7 @@ table names - person, name, location, login, dob, registered, picture
 
 6. dob Table Schema
 
+- dobID
 - date
 - age
 
@@ -105,6 +106,7 @@ table names - person, name, location, login, dob, registered, picture
 
 7. registered Table Schema
 
+- registeredID
 - date
 - age
 
@@ -112,6 +114,7 @@ table names - person, name, location, login, dob, registered, picture
 
 8. picture Table Schema 
 
+- pictureID
 - large 
 - medium 
 - thumbnail
