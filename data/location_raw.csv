@@ -19,24 +19,3 @@ locationID,street_number,street_name,city,state,country,postcode,coordinates_lat
 18,1795,Einthovenlaan,Toornwerd,Zuid-Holland,Netherlands,3158 OE,-83.4167,36.2885,+5:45,Kathmandu
 19,9693,Mozartstraße,Burgwedel,Hessen,Germany,37189,57.5696,173.2757,+3:00,"Baghdad, Riyadh, Moscow, St. Petersburg"
 20,6388,Dunavska,Nova Crnja,Braničevo,Serbia,69355,58.6666,-171.018,-3:30,Newfoundland
-21,street_number,street_name,city,state,country,postcode,coordinates_latitude,coordinates_longitude,timezone_offset,timezone_description
-22,3580,Park Rd,Lasalle,Saskatchewan,Canada,H8S 9B6,-68.9061,-105.6287,-3:30,Newfoundland
-23,4206,Karen Dr,Bernalillo,Oklahoma,United States,61014,62.8309,-143.1564,-10:00,Hawaii
-24,6886,Rue Duguesclin,Mötschwil,Luzern,Switzerland,4708,-7.7537,-48.0736,+5:45,Kathmandu
-25,5546,Heerlerschans,Kaatsheuvel,Groningen,Netherlands,3882 LE,-19.7817,-121.5142,+2:00,"Kaliningrad, South Africa"
-26,3413,Lerkeveien,Vatne,Oppland,Norway,6916,30.7005,104.8822,+9:30,"Adelaide, Darwin"
-27,5993,Kamo Road,Invercargill,Canterbury,New Zealand,73201,-6.0784,45.543,+5:45,Kathmandu
-28,9881,Albert Road,Preston,Derbyshire,United Kingdom,Y26 8HN,48.6375,-5.8433,+2:00,"Kaliningrad, South Africa"
-29,5809,Rua da Saudade,Ourinhos,Rio Grande do Norte,Brazil,25410,-50.6972,-162.4235,+5:30,"Bombay, Calcutta, Madras, New Delhi"
-30,5407,Gandhi Maidan Marg,Vasai-Virar,Andhra Pradesh,India,81474,46.9334,14.2907,-11:00,"Midway Island, Samoa"
-31,7400,New Road,Gloucester,Durham,United Kingdom,Q64 2LW,-71.1186,-53.8468,+5:45,Kathmandu
-32,7564,Ronwood Avenue,Timaru,West Coast,New Zealand,51777,-12.1785,-124.9963,+9:30,"Adelaide, Darwin"
-33,1245,Korsgade,Skaerbaek,Sjælland,Denmark,62654,47.0742,68.761,+6:00,"Almaty, Dhaka, Colombo"
-34,1475,Kapellenweg,Achern,Sachsen-Anhalt,Germany,10025,54.1978,52.6333,-2:00,Mid-Atlantic
-35,446,Golfoord,Oud-Beijerland,Overijssel,Netherlands,1837 UL,-70.5758,34.9525,+8:00,"Beijing, Perth, Singapore, Hong Kong"
-36,3160,Mokrousova,Mariupol,Lvivska,Ukraine,45836,27.8464,139.964,+4:00,"Abu Dhabi, Muscat, Baku, Tbilisi"
-37,6281,Continuación Nayarit,Tiquicheo,Veracruz,Mexico,80998,-80.3028,-28.704,+10:00,"Eastern Australia, Guam, Vladivostok"
-38,8506,Galway Road,Celbridge,Clare,Ireland,68451,-12.9905,83.7183,-3:30,Newfoundland
-39,1795,Einthovenlaan,Toornwerd,Zuid-Holland,Netherlands,3158 OE,-83.4167,36.2885,+5:45,Kathmandu
-40,9693,Mozartstraße,Burgwedel,Hessen,Germany,37189,57.5696,173.2757,+3:00,"Baghdad, Riyadh, Moscow, St. Petersburg"
-41,6388,Dunavska,Nova Crnja,Braničevo,Serbia,69355,58.6666,-171.018,-3:30,Newfoundland

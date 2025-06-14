@@ -71,8 +71,7 @@ def separatingData():
 
     table_col_map = {
         "person":
-            {"id_name": 28, 
-             "id_value": 29, 
+            {"ID": None, 
              "nameID": None, 
              "gender": 0, 
              "locationID": None, 
@@ -175,7 +174,6 @@ def removingDuplicatesAndGeneratingSerials(table_names):
     
 
 # ---------------------------------------------------------------------------------------------
-
 
 def transform():
     logging.info("Inside the transform function")

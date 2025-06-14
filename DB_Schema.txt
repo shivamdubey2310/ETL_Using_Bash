@@ -1,0 +1,79 @@
+2. person Table Schema
+
+- id_name - str - primary_key_composite
+- id_value - str - primary_key_composite
+- nameID - int - 
+- gender
+- locationID
+- email
+- loginID
+- dobID
+- registeredID
+- phone
+- cell
+- pictureID
+- nationality
+
+-----------------------------------------------------
+
+3. name Table Schema
+
+- nameID
+- name_title
+- first_name
+- last_name
+
+-------------------------------------------------------
+
+4. location Table Schema
+
+- locationID
+- street_number 
+- street_name 
+- city
+- state 
+- country 
+- postcode
+- coordinates_latitude 
+- coordinates_longitude
+- timezone_offset 
+- timezone_description
+
+-----------------------------------------------------------
+
+5. login Table Schema 
+
+- uuid 
+- username
+- password 
+- salt
+- md5 
+- sha1 
+- sha256
+
+----------------------------------------------------------------
+
+6. dob Table Schema
+
+- dobID
+- date
+- age
+
+-----------------------------------------------------------------
+
+7. registered Table Schema
+
+- registeredID
+- date
+- age
+
+----------------------------------------------------------------
+
+8. picture Table Schema 
+
+- pictureID
+- large 
+- medium 
+- thumbnail
+
+-------------------------------------------------------------
